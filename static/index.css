@@ -1,0 +1,143 @@
+
+body {
+  font-family: Poppins;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+
+#header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  opacity: 0%;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 30px; 
+  margin: 0;
+}
+
+#header img {
+  background: rgba(255, 255, 255, 0.08);
+border-radius: 14px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.09);
+  width: 305px;
+  height: auto;
+  transition: 0.3s;
+}
+#header img:hover {
+  opacity: 75%;
+}
+
+#content {
+  text-align: center;
+  padding: 20px;
+  margin-top: -4%;
+}
+
+#content h1 {
+  font-size: 24px;
+  cursor:pointer;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  
+}
+
+#searchbar {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form__input {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+border-radius: 14px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  width:50px;
+  height:50px;
+  padding-right: 1px;
+  padding-left: 1px;
+  text-align: center;
+  align-self: center;
+}
+
+.form__input::placeholder {
+  color: #aaa;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+
+.form__input:hover {
+  opacity: 75%;
+}
+
+.form__input:focus {
+  outline: none;
+  width: 450px;
+  opacity: 75%;
+}
+
+
+
+#footer p {
+  margin: 0;
+}
+
+.fa {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.fa:hover {
+  color: #aaa;
+}
+.script-container {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Optional: background color for visibility */
+  padding: 10px; /* Optional: padding for spacing */
+}
+.button {
+  background: rgba(255, 255, 255, 0.08);
+  width: 103px;
+  height: 60px;
+  border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.09);
+color: white;
+font-family: Poppins;
+font-size: 30px;
+transition: 0.3s;
+}
+.button:hover {
+  opacity: 75%;
+}
