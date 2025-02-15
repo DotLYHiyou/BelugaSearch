@@ -1,6 +1,6 @@
 <img src="belugas.png">
 <details>
-  <summary>What is Beluga?</summary>
+  <summary>What is Belugas?</summary>
 
   Beluga is a modified version of the original Ultraviolet, by being static it is able to run on almost anything. It is also small in size and efficient.
 
