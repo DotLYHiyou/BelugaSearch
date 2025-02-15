@@ -58,6 +58,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .form__input {
+  font-family: Poppins;
   padding: 10px;
   background: rgba(255, 255, 255, 0.08);
 border-radius: 14px;
