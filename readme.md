@@ -12,3 +12,9 @@
  Visit https://pages.dev to learn more.
 
 </details>
+<details>
+  <summary>Is it open source?</summary>
+
+ By being on Github, Belugas allows anyone to fork, edit, and deploy the software freely. No credit needed, enjoy.
+
+</details>
