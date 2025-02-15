@@ -29,15 +29,47 @@
             <p id="uv-error"></p>
             <pre id="uv-error-code"></pre>
           </div>
-          <button class="button discord" onclick="window.open('https://discord.com/invite/unblock', '_blank')">
-            <i class="fa-brands fa-discord"></i>
+          <button class="button discord" onclick="pasteUrl('https://discord.com/invite/unblock')">
+            <i class="fa-brands fa-discord"></i> 
         </button>
-        <button class="button github" onclick="window.open('https://github.com/skoopplayz/Belugas', '_blank')">
+        <button class="button github" onclick="pasteUrl('https://github.com/skoopplayz/Belugas')">
             <i class="fa-brands fa-github"></i>
         </button>
-        <button class="button cloud" onclick="window.open('https://pages.dev', '_blank')">
-            <i class="fa-solid fa-cloud"></i>
-        </button>
+        <button class="button cloud" onclick="randomPick()">
+         <i class="fa-solid fa-dice"></i> 
+     </button>
+ 
+     <script>
+         function randomPick() {
+             const urls = [
+                 'https://www.youtube.com',
+                 'https://www.tiktok.com',
+                 'https://www.netflix.com',
+                 'https://www.hulu.com',
+                 'https://www.spotify.com',
+                 'https://www.instagram.com',
+                 'https://www.facebook.com',
+                 'https://www.twitter.com',
+                 'https://www.snapchat.com',
+                 'https://www.reddit.com',
+                 'https://www.crazygames.com',
+                 'https://yandex.com/games/all-games',
+                 'https://www.poki.com',
+                 'https://www.now.gg',
+
+             ];
+             const randomIndex = Math.floor(Math.random() * urls.length);
+             const randomUrl = urls[randomIndex];
+             document.getElementById('uv-address').value = randomUrl;
+         }
+     </script>
+    
+        
+        <script>
+            function pasteUrl(url) {
+                document.getElementById('uv-address').value = url;
+            }
+        </script>
         
       </div>
       
