@@ -6,7 +6,7 @@
 
 </details>
 <details>
-  <summary>How can I deploy?</summary>
+  <summary>How can I deploy it?</summary>
 
  I recommend using Cloudflare Pages. It is free and easy to create an account.
  Visit https://pages.dev to learn more.
