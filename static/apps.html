@@ -1,0 +1,239 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/jpg" href="~/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Apps</title>
+</head>
+<div class="button-container">
+    <button class="back-button" onclick="window.location.href='index.html';">Back</button>
+</div>
+<form id="uv-form">
+    <input id="uv-search-engine" value="https://www.duckduckgo.com/?q=" type="hidden"/> 
+    <input id="uv-address" type="text" placeholder="Search DuckDuckGo or type a URL" class="form__input"/>
+  </form>
+  <div class="desc left-margin">
+    <p id="uv-error"></p>
+    <pre id="uv-error-code"></pre>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 100px;">
+
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+        <button class="button" onclick="autofill('http://easyfun.gg')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/easyfungg.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">EasyFun</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://play.geforcenow.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/nvidia.svg" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">GeForce Now</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://xbox.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <i class="fa-brands fa-xbox"></i>
+                <span style="margin-top: 5px; font-size: 13px;">Xbox Cloud</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://now.gg')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/nowgg.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Now.gg</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://tiktok.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/tiktok.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">TikTok</span>
+            </div>
+        </button>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+        <button class="button" onclick="autofill('https://youtube.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/youtube.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Youtube</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://reddit.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/reddit.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Reddit</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://netflix.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/netflix.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Netflix</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://hulu.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/hulu.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Hulu</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://disneyplus.com')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/disney.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Disney+</span>
+            </div>
+        </button>
+        </div>
+
+    
+        <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+    <button class="button" onclick="autofill('https://poki.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/poki.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Poki</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/seraph.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Seraph</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://pokerogue.io/pokerogue.embed')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/PokéRogue.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">PokéRogue            </span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://luna.amazon.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/luna.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Amazon Luna            </span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://discord.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/discord.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Discord            </span>
+        </div>
+    </button>
+
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+
+    <button class="button" onclick="autofill('https://y8.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/Y8.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Y8 Games</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://twitch.tv')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/twitch.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Twitch</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://pinterest.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/pinterest.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Pinterest</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://crazygames.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/crazygames.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">CrazyGames</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://gba.js.org/')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/gba.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">GBA Games</span>
+        </div>
+    </button>
+
+    </div>
+
+<style>
+    #uv-form {
+        display: none;
+    }
+    .button {
+        background: rgba(255, 255, 255, 0.08);
+        width: 103px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        color: white;
+        font-family: Poppins;
+        font-size: 50px;
+        transition: 0.3s;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    .button:hover {
+        opacity: 75%;
+    }
+    .button-container {
+    position: absolute;
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.08);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: white;
+    font-family: Poppins;
+    font-size: 12px;
+    transition: 0.3s;
+}
+    .back-button:hover {
+        opacity: 75%;
+    }
+</style>
+
+
+
+
+<script src="uv/uv.bundle.js" defer></script>
+<script src="uv/uv.config.js" defer></script>
+<script src="register-sw.js" defer></script>
+<script src="search.js" defer></script>
+<script src="index.js" defer></script>
+<script src="error.js" defer></script>
+
