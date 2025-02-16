@@ -1,0 +1,239 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/jpg" href="~/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Apps</title>
+</head>
+<div class="button-container">
+    <button class="back-button" onclick="window.location.href='index.html';">Back</button>
+</div>
+<form id="uv-form">
+    <input id="uv-search-engine" value="https://www.duckduckgo.com/?q=" type="hidden"/> 
+    <input id="uv-address" type="text" placeholder="Search DuckDuckGo or type a URL" class="form__input"/>
+  </form>
+  <div class="desc left-margin">
+    <p id="uv-error"></p>
+    <pre id="uv-error-code"></pre>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 100px;">
+
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+        <button class="button" onclick="autofill('https://1v1.lol')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/1v1lol.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">1v1.lol</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/slope/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/slope.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Slope</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/flappy/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/flappy.jpeg" height="50px"  style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Flappy Bird</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://eaglercraft.app/web/')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/eaglercraft.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Eaglercraft</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('http://ovolve.github.io/2048-AI/')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/2048.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">2048</span>
+            </div>
+        </button>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+        <button class="button" onclick="autofill('https://motox3m.gitlab.io/x3m-1.20.1p/')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/motox3m.png" height="50px">
+                <span style="margin-top: 5px; font-size: 13px;">Moto X3M</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/paperio2/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/paperio2.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Paper.io 2</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/crossy/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/crossyroad.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Crossy Road</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/jetpackjoyride/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/jetpackjoyride.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 11px;">Jetpack Joyride</span>
+            </div>
+        </button>
+
+        <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/doodlejump/index.html')">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="images/doodle.png" height="50px" style="border-radius: 8px;">
+                <span style="margin-top: 5px; font-size: 13px;">Doodle Jump</span>
+            </div>
+        </button>
+        </div>
+
+    
+        <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+    <button class="button" onclick="autofill('https://www.worldguessr.com')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/openguessr.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">World Guessr</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/theimpossiblequiz/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/theimpossiblequiz.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 9px;">The Impossible Quiz</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://pokerogue.io/pokerogue.embed')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/pokerogue.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">PokéRogue            </span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://www.easyfun.gg/cloud-games/roblox.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/roblox.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Roblox            </span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/deathrun3d/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/death.png" height="50px">
+            <span style="margin-top: 5px; font-size: 13px;">Death Run 3D            </span>
+        </div>
+    </button>
+
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/subwaysurfers/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/subway.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 11px;">Subway Surfers</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://githubshrub.github.io/html5-games/games/templerun2/')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/templerun2.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Temple Run 2</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/cookieclicker/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/cookieclicker.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 11px;">Cookie Clicker</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://seraph.reveriestudios.online/games/fruitninja/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/fruitninja.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Fruit Ninja</span>
+        </div>
+    </button>
+
+    <button class="button" onclick="autofill('https://realpeanut.github.io/games/run3/index.html')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <img src="images/run3.png" height="50px" style="border-radius: 8px;">
+            <span style="margin-top: 5px; font-size: 13px;">Run 3</span>
+        </div>
+    </button>
+
+    </div>
+
+<style>
+    #uv-form {
+        display: none;
+    }
+    .button {
+        background: rgba(255, 255, 255, 0.08);
+        width: 103px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        color: white;
+        font-family: Poppins;
+        font-size: 50px;
+        transition: 0.3s;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    .button:hover {
+        opacity: 75%;
+    }
+    .button-container {
+    position: absolute;
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.08);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: white;
+    font-family: Poppins;
+    font-size: 12px;
+    transition: 0.3s;
+}
+    .back-button:hover {
+        opacity: 75%;
+    }
+</style>
+
+
+
+
+<script src="uv/uv.bundle.js" defer></script>
+<script src="uv/uv.config.js" defer></script>
+<script src="register-sw.js" defer></script>
+<script src="search.js" defer></script>
+<script src="index.js" defer></script>
+<script src="error.js" defer></script>
+
